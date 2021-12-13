@@ -298,6 +298,7 @@ You can then use `/dev/ttyS0` as you normally would as a terminal or programmer 
 - [CHIP Community](http://www.chip-community.org/)
 - [Chip Reddit community](https://www.reddit.com/r/ChipCommunity/)
 - [PocketCHIP Launcher (Marshmallow Edition)](https://github.com/o-marshmallow/PocketCHIP-pocket-home)
+- [JF Possibilities' NTC GIT project mirror.](http://chip.jfpossibilities.com/gits/)
 
 ---
 Sources
