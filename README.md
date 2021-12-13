@@ -7,6 +7,9 @@ A space to collect all the useful notes and experiment about PocketCHIP.
 Simplyfies the Flashing Process for the C.H.I.P and PocketC.H.I.P Computer.
 [https://github.com/Thore-Krug/Flash-CHIP](https://github.com/Thore-Krug/Flash-CHIP)
 
+## Install-Flash-Chip-Mac
+Ready to use environment to Flash your C.H.I.P Single Board Computer on MacOS
+[https://github.com/Thore-Krug/Install-Flash-Chip-Mac](https://github.com/Thore-Krug/Install-Flash-Chip-Mac)
 
 ## Erasing and re-flashing the CHIP
 You can erase and factory flash a CHIP from your computer using this repo. It will completely erase the CHIP, so make sure you have anything important backed up.
@@ -299,6 +302,9 @@ You can then use `/dev/ttyS0` as you normally would as a terminal or programmer 
 - [Chip Reddit community](https://www.reddit.com/r/ChipCommunity/)
 - [PocketCHIP Launcher (Marshmallow Edition)](https://github.com/o-marshmallow/PocketCHIP-pocket-home)
 - [JF Possibilities' NTC GIT project mirror.](http://chip.jfpossibilities.com/gits/)
+- [JF Possibilities' Chrome Flashing App Files Mirror](http://chip.jfpossibilities.com/flash-chrome/)
+- [C.H.I.P. Flash Collection](https://archive.org/details/C.h.i.p.FlashCollection)
+- [NextThingCo Pocket C.H.I.P. Flashing Guide](https://medium.com/@0x1231/nextthingco-pocket-c-h-i-p-flashing-guide-3445492639e)
 
 ---
 Sources
