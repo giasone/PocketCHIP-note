@@ -305,6 +305,18 @@ You can then use `/dev/ttyS0` as you normally would as a terminal or programmer 
 - [JF Possibilities' Chrome Flashing App Files Mirror](http://chip.jfpossibilities.com/flash-chrome/)
 - [C.H.I.P. Flash Collection](https://archive.org/details/C.h.i.p.FlashCollection)
 - [NextThingCo Pocket C.H.I.P. Flashing Guide](https://medium.com/@0x1231/nextthingco-pocket-c-h-i-p-flashing-guide-3445492639e)
+- [https://byteporter.com/tags/ntc-chip/](https://byteporter.com/tags/ntc-chip/)
+- [https://www.cnx-software.com/2015/07/31/next-thing-has-released-software-and-hardware-files-for-the-9-chip-computer/](https://www.cnx-software.com/2015/07/31/next-thing-has-released-software-and-hardware-files-for-the-9-chip-computer/)
+- [https://periph.io/platform/chip/](https://periph.io/platform/chip/)
+- [https://time4ee.com/articles.php?article_id=32](https://time4ee.com/articles.php?article_id=32)
+- [https://time4ee.com/articles.php?article_id=28](https://time4ee.com/articles.php?article_id=28)
+- [https://theiotlearninginitiative.gitbook.io/nextthingcochip/introduction](https://theiotlearninginitiative.gitbook.io/nextthingcochip/introduction)
+- [https://markandruth.co.uk/category/c-h-i-p](https://markandruth.co.uk/category/c-h-i-p)
+- [https://blog.damnsoft.org/using-your-pocket-c-h-i-p-as-a-portable-logic-analyzer/](https://blog.damnsoft.org/using-your-pocket-c-h-i-p-as-a-portable-logic-analyzer/)
+- [https://linux-sunxi.org/NextThingCo_CHIP](https://linux-sunxi.org/NextThingCo_CHIP)
+- [https://web.archive.org/web/20200223184409/http://www.chip-community.org/index.php/Add_a_enc28j60_Ethernet_interface](https://web.archive.org/web/20200223184409/http://www.chip-community.org/index.php/Add_a_enc28j60_Ethernet_interface)
+- [https://web.archive.org/web/20200218072013/http://www.chip-community.org/index.php/Main_Page](https://web.archive.org/web/20200218072013/http://www.chip-community.org/index.php/Main_Page)
+- [https://blog.damnsoft.org/developing-on-a-pocket-chip-with-motor-a-text-based-ide/](https://blog.damnsoft.org/developing-on-a-pocket-chip-with-motor-a-text-based-ide/)
 
 ---
 Sources
