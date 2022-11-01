@@ -288,6 +288,77 @@ If you want to use the built-in UART you need to shutdown getty:
 
 You can then use `/dev/ttyS0` as you normally would as a terminal or programmer and stty to check the config `stty -F /dev/ttyS0` or change it `stty -F /dev/ttyUSB0 9600`.
 
+## GPIO
+For various reasons related to the community nature of Linux development, the GPIO expander pin numbers are different between CHIP OS kernels 4.3 and 4.4. What follows is a very technical discussion of the GPIO access. If you just want to start making stuff and don’t need low-level information, you might just want to skip this section and go straight to the python library.
+
+If you are developing applications on CHIP that use GPIO pins and you would like consistent behavior between the kernel versions, you need to know how to find out the base value for the GPIO values. It may be enough for you to know that the GPIO expander pins start at 408 on 4.3, 1016 on 4.4.11, and 1013 on 4.4.13-ntc-mlc, however, it would be ideal to calculate this in your application to truly future-proof for future kernels.
+
+If you look in the directory /sys/class/gpio, you’ll find two directories starting with gpio: gpiochip0 and either gpiochip408 (4.3) or gpiochip1016 (4.4.11) or gpiochip1013 (4.4.13-ntc-mlc).
+
+The 408 or 1016 or 1013 are the bases for the expander pins. If you want to definitively find out what the base is using code, you should
+
+```
+cat gpiochip*/label
+cat gpiochip*/ngpio
+cat gpiochip*/base
+
+```
+
+The label you are interested in is the value pcf8574a which is the device that provides GPIO expansion. This provides the number of GPIO as returned by ngpio. The first expander pin starts with the base value. If you parse all these values and apply to your code, you can setup your application to be kernel-agnostic for GPIO access.
+
+You can great a group called gpio, add the user to it, export the gpio etc as follows:
+
+```
+sudo groupadd gpio
+sudo usermod -aG gpio <myusername>
+su <myusername>
+sudo chgrp gpio /sys/class/gpio/export
+sudo chgrp gpio /sys/class/gpio/unexport
+sudo chmod 775 /sys/class/gpio/export
+sudo chmod 775 /sys/class/gpio/unexport
+
+```
+
+To search for the address used for the pcf8574a
+
+```
+grep -l pcf8574a /sys/class/gpio/gpiochip*/label  | grep -o "[0-9]*"
+
+```
+
+in case you have permission issues 
+
+```
+sudo sh -c 'echo 1013 > /sys/class/gpio/export'
+```
+
+and 
+
+```
+sudo sh -c 'echo 1013 > /sys/class/gpio/unexport'
+```
+
+blink led example:
+
+```
+import CHIP_IO.GPIO as GPIO
+import time
+
+GPIO.cleanup()
+
+GPIO.setup("XIO-P2", GPIO.OUT)
+
+print("Toggling  XIO-P1 10 times...")
+
+for i in range(0,1000):
+        GPIO.output("XIO-P2", GPIO.LOW)
+        time.sleep(0.5)
+        GPIO.output("XIO-P2", GPIO.HIGH)
+        time.sleep(0.5)
+
+GPIO.cleanup()
+```
+
 ---
 ### Other links
 - [The C.H.I.P. is dead](https://www.jfpossibilities.com/imo/chip-dead/)
