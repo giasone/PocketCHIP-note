@@ -317,6 +317,7 @@ You can then use `/dev/ttyS0` as you normally would as a terminal or programmer 
 - [https://web.archive.org/web/20200223184409/http://www.chip-community.org/index.php/Add_a_enc28j60_Ethernet_interface](https://web.archive.org/web/20200223184409/http://www.chip-community.org/index.php/Add_a_enc28j60_Ethernet_interface)
 - [https://web.archive.org/web/20200218072013/http://www.chip-community.org/index.php/Main_Page](https://web.archive.org/web/20200218072013/http://www.chip-community.org/index.php/Main_Page)
 - [https://blog.damnsoft.org/developing-on-a-pocket-chip-with-motor-a-text-based-ide/](https://blog.damnsoft.org/developing-on-a-pocket-chip-with-motor-a-text-based-ide/)
+- [https://github.com/xtacocorex/CHIP_IO](https://github.com/xtacocorex/CHIP_IO)
 
 ---
 Sources
